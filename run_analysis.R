@@ -48,5 +48,6 @@ write.csv(tidy, 'final_tidy_data.csv')
 
 tidy_mean <- aggregate(tidy[, 3:dim(tidy)[2]],list(tidy$subject,tidy$activity),mean)
 names(tidy_mean)[1:2] <- c('subject', 'activity')
-
-write.csv(tidy_mean, 'tidy_mean.csv')
+head(tidy_mean)
+write.table(tidy_mean, 'tidy_mean.txt')
+##write.csv(tidy_mean, 'tidy_mean.csv')

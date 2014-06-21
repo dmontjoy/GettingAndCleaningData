@@ -1,0 +1,69 @@
+CodeBook
+========================================================
+
+Data Transformation
+
+In the run_analysis script i programmed this steps:
+1) Download and read in a dataframe the data: features, activities, train and test (subjects, X coordinate, Y coordinate)
+2) Set names to dataframe: features and activities.
+3) Merge the train and test data with rbind command.
+3) Extracts only the measurements on the mean and standard deviation for each measurement using Regular Expression: grep command.
+4) Names activity in the data set using features Data
+5) Puts all the data together in a dataframe: subjects, x coordinate (train + test), y coordinate (train + test)
+6) Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
+Variable Descriptions
+For a complete description of the process of obtain the data and meaning data:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+subject: ID indicating the subject from whom data was collected
+activity: Activity being performed
+tBodyAccMeanX
+tBodyAccMeanY
+tBodyAccMeanZ
+tBodyAccStdX
+tBodyAccStdY
+tBodyAccStdZ
+tGravityAccMeanX
+tGravityAccMeanY
+tGravityAccMeanZ
+tGravityAccStdX
+tGravityAccStdY
+tGravityAccStdZ
+tBodyAccJerkMeanX
+tBodyAccJerkMeanY
+tBodyAccJerkMeanZ
+tBodyAccJerkStdX
+tBodyAccJerkStdY
+tBodyAccJerkStdZ
+tBodyGyroMeanX
+tBodyGyroMeanY
+tBodyGyroMeanZ
+tBodyGyroStdX
+tBodyGyroStdY
+tBodyGyroStdZ
+tBodyGyroJerkMeanX
+tBodyGyroJerkMeanY
+tBodyGyroJerkMeanZ
+tBodyGyroJerkStdX
+tBodyGyroJerkStdY
+tBodyGyroJerkStdZ
+tBodyAccMagMean
+tBodyAccMagStd
+tGravityAccMagMean
+tGravityAccMagStd
+tBodyAccJerkMagMean
+tBodyAccJerkMagStd
+tBodyGyroMagMean
+tBodyGyroMagStd
+tBodyGyroJerkMagMean
+tBodyGyroJerkMagStd
+fBodyAccMeanX
+fBodyAccMeanY
+fBodyAccMeanZ
+fBodyAccStdX
+fBodyAccStdY
+fBodyAccStdZ
+fBodyAccJerkMeanX
+fBodyAccJerkMeanY
+fBodyAccJerkMeanZ
